@@ -1,0 +1,342 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root{
+    --primary-color: #0a3871;
+
+    --font:'Inter', sans-serif;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+header{
+    width: 100%;
+    height: 40px;
+}
+
+.logo{
+    width: 120px;
+    height: 48px;
+    margin-top: 2.5%;
+    margin-left: auto;
+}
+
+body {
+    background-color: #f4f4fc;
+    width: 100%;
+    height: 100%;
+}
+
+main{
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 90%;
+    
+}
+
+.container{
+    width: 43em;
+    height: 49em;
+
+}
+
+.contenedor__texto__encriptador{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    overflow: hidden;
+    margin-top: 1%;
+    margin-left: 25%;
+    padding-left: 1.8%;
+    width: 43em;
+    height: 49em;
+
+}
+
+#TextoUsuario{
+    width:80%;
+    height:90%;
+    padding: auto;
+    border:none;
+    box-sizing: border-box;
+    background-color: #f4f4fc;
+    cursor: pointer;
+    color: var(--primary-color);
+    font-size: 1.8em;
+    font-weight: 400;
+    font-family: 'Inter', sans-serif;
+    resize: none;
+    overflow: auto;
+    
+}
+
+#TextoUsuario::placeholder{
+    color: var(--primary-color);
+}
+
+.condiciones{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 1%;
+    margin-left: 25%;
+    color: #495057;
+
+}
+.imagen__signo{
+    padding: 1%;
+}
+
+.botones{
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    margin-top: 1%;
+    margin-left: 25%;
+    padding-top: 15px;
+    width: 100%;
+}
+
+.boton__encriptar{
+    
+    width: 328px;
+    height:67px;
+    border-radius: 24px;
+    background-color:#0a3871;
+    color:#f6f6f6 ;
+    font-size: 1em;
+    font-weight: 400;
+    font-family:var(--font);
+    border: none;
+    margin-right: 20px;
+    cursor: pointer;
+
+}
+
+.boton__desencriptar{
+    width:328px;
+    height:67px;
+    border-radius: 24px;
+    background-color:#D8DFE8;
+    color:var(--primary-color) ;
+    font-size: 1em;
+    font-weight: 400;
+    font-family:var(--font);
+    border: 1px solid #0A3871;
+    margin-right: 20px;
+    cursor: pointer;
+
+}
+
+.contenedor__resultado{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1%;
+    margin-left: 20%;
+    margin-bottom: 2.5%;
+    width:400px;
+    height:63em;
+    background-color: #ffffff;
+    box-sizing: border-box;
+    border-radius: 32px;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.50);
+
+}
+
+.contenedor__imagen{ 
+    display: block;
+    align-items: center;
+    margin-top: 27%;
+    padding-top: 50px;
+
+}
+
+.contenedor__resultado__descripcion{ 
+    justify-content: center;
+    text-align: center;
+    margin-top: 3%;
+    box-sizing: border-box;
+    top: 570px;
+    left: 40px;
+}
+
+.contenedor__resultado__descripcion h1{
+    text-align: center;
+    word-break: break-word;
+    font-size: 1.5em;
+    font-weight: 700;
+    font-family: var(--font);
+    text-align: center;
+    color: #343A40
+}
+
+.contenedor__resultado__descripcion p{
+    text-align: center;
+    word-break: break-word;
+    font-family: var(--font);
+    font-weight: 400;
+    font-size: 1em;
+    text-align: center;
+    color: #495057;
+    padding-top: 20px;
+}
+
+.contenedor__resultado__encriptacion{
+    text-align: center;
+    word-break: break-word;
+    bottom: 25em;
+    width: 20em;
+    height: 27em;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.contenedor__resultado__encriptacion p{
+    color: #495057;
+    font-size: 25px;
+}
+
+.contenedor__boton__copiar{
+    justify-content: center;
+    align-items: center; 
+    bottom: 25em;
+    top: 42em;
+    background-color: white;
+    
+}
+
+
+.boton__copiar{
+    align-items: center;
+    width: 328px;
+    height: 67px;
+    border-radius: 24px;
+    background-color: #ffffff;
+    color: #0A3871;
+    font-size: 1em;
+    font-weight: 400;
+    font-family: 'Inter', sans-serif;
+    border: 1px solid #0A3871;
+    cursor: pointer;
+    
+}
+
+@media only screen and (max-width: 1024px) {
+    main{
+        display: flex;
+        flex-direction: column;
+        margin-top: 1%;
+        width: 95%;
+        padding: 0;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      width: 90%;
+      margin: 0 auto;
+
+    }
+
+    .header{
+        display: block;
+        width: 90%;
+        height: auto;
+       
+    }
+
+    .logo{
+        width: 80px;
+        height: auto;
+        margin-top: 2.5%;
+        margin-left: 1%;
+    }
+
+
+    .contenedor__texto__encriptador{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        height: 60%;
+        padding: 0%;
+        margin-left: -5%;
+        margin-top: 15%;
+        font-size: 1em;
+    }
+
+    #TextoUsuario{
+        padding: auto;
+        margin: 0%;
+        justify-content: center;
+    }
+
+
+    .condiciones{
+        margin-left: 2%;
+        width: 90%;
+        font-size: 0.7em;
+    }
+
+    .botones{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-left: 2%;
+        width: 100%;
+    }
+    
+    .boton__encriptar, .boton__desencriptar{
+        width: 80%;
+        margin: 10px;
+        font-size: 0.8em;
+    
+    }
+
+    .contenedor__resultado{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        height: 20%;
+        padding: 10px;
+        margin-left: 6%;
+        margin-top: 2%;
+    }
+
+    .contenedor__imagen {
+        display: none; 
+    }
+
+
+    .contenedor__resultado__descripcion{
+        width: 90%;
+        height: 20%;
+        padding: 10px;
+        margin-left: 5%;
+    }
+
+    .contenedor__resultado__encriptacion{
+        display: contents;
+    }
+   
+    .contenedor__boton__copiar{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 80%;
+        margin: 10px;
+        font-size: 0.8em;
+
+    }
+
+
+}
